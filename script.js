@@ -23,3 +23,19 @@ function filtrar() {
         card.style.display = titulo.includes(termo) ? 'block' : 'none';
     });
 }
+
+function filtrarCategoria(categoria) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        if (card.dataset.categoria === categoria) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+function mostrarTodos() {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => card.style.display = 'block');
+}

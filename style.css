@@ -71,9 +71,9 @@ nav a img {
     gap: 12px;
     margin: 1rem auto;
     padding: 0 2rem;
-    width: 1800px;  
+    max-width: 100%;
+    box-sizing: border-box;
 }
-
 .carrossel-track {
     flex: 1;
     display: flex;
