@@ -4,35 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <!--Link do icon que estou usando localmente-->
-    <link rel="icon" href="imagens/logoSite.png"image/png">
+    <link rel="icon" href="imagens/logoSite.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
         <div class="logo">
-          <img src="imagens/logoSite.png" alt="NegaoStore" />
-          <span class="nome-empresa">NegaoStore</span>
+            <img src="imagens/logoSite.png" alt="NegaoStore" />
+            <span class="nome-empresa">NegaoStore</span>
         </div>
-      
-      
         <nav>
-          <nav>
-              <a href="index.html">
-                  <img src="imagens/processador.png"" />
-                  Produtos
-              </a>
-              <a href="pagLogin.html">
-                  <img src="imagens/perfil.png" alt="" />
-                  Cadastro
-              </a>
-              <a href="sobre.html">
-                  <img src="imagens/questionando.png" alt="" />
-                  Sobre
-              </a>
-          </nav>
-      </nav>
-      </header>
-      <script src="script.js"></script> 
+            <a href="index.html">
+                <img src="imagens/processador.png" alt="" />
+                Produtos
+            </a>
+            <a href="pagLogin.html">
+                <img src="imagens/perfil.png" alt="" />
+                Cadastro
+            </a>
+            <a href="sobre.html">
+                <img src="imagens/questionando.png" alt="" />
+                Sobre
+            </a>
+        </nav>
+    </header>
+
+    <div class="cadastro-container">
+        <h2>Criar Conta</h2>
+        <div class="campo">
+            <label>Nome completo</label>
+            <input type="text" placeholder="Seu nome" />
+        </div>
+        <div class="campo">
+            <label>E-mail</label>
+            <input type="email" placeholder="seuemail@email.com" />
+        </div>
+        <div class="campo">
+            <label>Senha</label>
+            <input type="password" placeholder="Crie uma senha" />
+        </div>
+        <div class="campo">
+            <label>Confirmar senha</label>
+            <input type="password" placeholder="Repita a senha" />
+        </div>
+        <button class="btn-cadastrar">Cadastrar</button>
+        <div class="login-link">
+            Já tem conta? <a href="#">Entrar</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
